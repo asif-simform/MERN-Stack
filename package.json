@@ -18,7 +18,7 @@
     "postinstall": "typesync",
     "dev": "nodemon src/index.ts",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node ./build/index.js",
     "lint": "eslint . --ext .ts",
     "prettier-format": "run-script-os",
     "prettier-format:win32": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
