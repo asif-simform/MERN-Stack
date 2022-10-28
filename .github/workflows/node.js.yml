@@ -32,8 +32,6 @@ jobs:
       run: yarn install --frozen-lockfile # optional, --immutable
     - name: Make a build
       run: yarn run build
-    - name: Start app
-      run: yarn run start
     - name: Deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
